@@ -1,6 +1,6 @@
 用于解决这类问题：
 
-对于所有的i， $0\leq i \leq 2^n-1,求解\sum_{j\subset i}a_{j}$ 。
+对于所有的i， $0\leq i \leq 2^n-1$ ，求解 $\sum_{j\subset i}a_{j}$$ 。
 
 ```cpp
 for(int j = 0; j < n; j++) 
