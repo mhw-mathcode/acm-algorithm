@@ -33,13 +33,8 @@ void solve()
         dp[u]++;
     }
     for(int j=0;j<24;j++)
-    {
         for(int i=0;i<(1<<24);i++)
-        {
-
             if(i>>j&1) dp[i]+=dp[i^(1<<j)];
-        }
-    }
     int ans=0;
     for(int i=0;i<(1<<24);i++) ans^=(n-dp[i])*(n-dp[i]);
     cout<<ans<<endl;
